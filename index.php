@@ -21,7 +21,7 @@
       <?php
 
       $QaA = [
-        'Domande' => [
+        [
           'Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?',
           'Come fa Google a proteggere la mia privacy e a tenere le mie informazioni al sicuro?',
           'Perché il mio account è associato a un paese?',
@@ -29,7 +29,7 @@
           'Come faccio a rimuovere informazioni su di me dai risultati di ricerca di Google?',
           'Quando faccio clic sui risultati della Ricerca Google, le mie chiavi di ricerca vengono inviate ai siti web?'
         ],
-        'Risposte' => [
+        [
           "La recente decisione della Corte di giustizia dell'Unione europea ha profonde conseguenze per i motori di ricerca in Europa. La Corte ha stabilito che alcuni utenti hanno il diritto di chiedere ai motori di ricerca come Google di rimuovere risultati relativi a chiavi di ricerca che includono il proprio nome. Per poter essere rimossi, i risultati visualizzati devono essere inadeguati, irrilevanti o non più rilevanti, o eccessivi.
 
 Da quando questa decisione è stata pubblicata il 13 maggio 2014, abbiamo lavorato incessantemente per uniformarci a essa. Si tratta di una procedura complessa perché dobbiamo valutare ogni singola richiesta e effettuare un bilanciamento tra il diritto dell'individuo a controllare i suoi dati personali ed il diritto di tutti di conoscere e distribuire le informazioni.
@@ -83,8 +83,11 @@ Se il paese associato al tuo account non corrisponde al tuo paese di residenza, 
         ]
       ];
 
-      foreach ($variable as $key => $value) {
-        // code...
+      for ($i=0; $i < 6; $i++) {
+
+        echo $QaA[0][$i];
+        echo $QaA[0][$i];
+
       }
 
     ?>
