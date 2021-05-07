@@ -87,7 +87,6 @@ Se il paese associato al tuo account non corrisponde al tuo paese di residenza, 
 
         echo $QaA[0][$i];
         echo $QaA[0][$i];
-
       }
 
     ?>
